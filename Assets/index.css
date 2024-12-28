@@ -1,0 +1,329 @@
+/*Css de mi portafolio*/
+
+main{
+  font-family: 'Times New Roman', serif;
+}
+
+.title{
+  font-family: 'Times New Roman', serif;
+  font-size: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Header {
+    background-color: rgb(218, 66, 66);
+    font-family: 'Times New Roman', serif;
+    height: 85px;
+    width: 100%;
+}
+
+nav {
+    height: 100%;
+    min-height: 70%;
+    padding: 5px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* El color del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    display: inline-block;
+    padding: 10px;
+}
+
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+main{
+    background-color: rgb(49, 43, 43);
+    font-family: 'Times New Roman', serif;
+}
+
+/* Estilo para la sección de la presentación */
+.Presentation {
+  display: flex;                /* Usamos flexbox para alinear los elementos en fila */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center;          /* Centrado vertical */
+  height: 65vh;                 /* Ajustamos la altura para que ocupe toda la pantalla */
+  padding: 0px 200px;             /* Margen a la derecha e izquierda */
+}
+
+/* Caja de la descripción */
+.box-presentation {
+  width: 50%;                   
+}
+
+/* Títulos */
+#title-part2 {
+  font-size: 60px;
+  padding-left: 55px;
+}
+
+#sub-title-presentation {
+  font-family: 'Times New Roman', serif;
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 115px;
+}
+
+.box-description {
+  padding-top: 50px;
+  width: 100%;
+  text-align: justify;
+}
+
+/* Estilo para la foto de perfil */
+.box-profile {
+  width: 40%;                  /* 30% para la foto */
+  display: flex;
+  justify-content: center;      /* Alineamos la imagen al centro */
+  align-items: center;
+}
+
+.card {
+  width: 220;
+  height: 300;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+
+.card__content {
+  background: rgb(5, 6, 45);
+  border-radius: 17px;
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;                 /* Aseguramos que la imagen ocupe todo el espacio de la tarjeta */
+  height: 100%;
+  border-radius: 17px;         /* Bordes redondeados para la imagen */
+  object-fit: cover;           /* Asegura que la imagen se ajuste bien dentro del contenedor */
+}
+
+/* Skills section */ 
+
+#Skills {
+  text-align: center;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+#Skills h2 {
+  font-family: 'Times New Roman', Times, serif;
+  justify-content: center;
+  display: flex;
+  font-size: 50px;
+  width: 100%; 
+}
+   
+
+#container-Skills {
+  height: 900px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 250px;
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas en la primera y segunda fila */
+  gap: 20px; /* Espacio entre las cartas */
+  justify-items: center; /* Centrar las cartas en cada celda */
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  margin: 15px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); 
+}
+
+.card img {
+  width: 100;
+  height: 100;
+  object-fit: cover; 
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+/*Projects*/
+
+#Projects {
+  text-align: justify;
+  width: 100%;
+  padding-top: 100px;
+  width:100%;
+}
+
+#Projects h1 {
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  width: 100%;
+}
+
+#container-Projects {
+  height: 500px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 0px;
+  padding-bottom: 250px;
+  display: flex; /* Cambiado de grid a flex */
+  justify-content: space-between; /* Distribuir las cartas */
+  gap: 20px; /* Espacio entre las cartas */
+  align-items: center; /* Centrar las cartas verticalmente */
+}
+
+.card-projects {
+  --border-radius: 0.75rem;
+  --primary-color: #7257fa;
+  --secondary-color: #3c3852;
+  width: 420px; /* Aumentado al doble de su tamaño anterior */
+  font-family: "Arial";
+  padding: 2rem; /* Aumentado para que se vea más grande */
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: #f1f1f3;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+  position: relative;
+}
+
+.card-projects > * + * {
+  margin-top: 1.1em;
+}
+
+.card-projects .card__content-projects {
+  color: var(--secondary-color);
+  font-size: 0.86rem;
+}
+
+.card-projects .card__title-projects {
+  padding: 0;
+  font-size: 1.6rem; /* Aumentado el tamaño del título */
+  font-weight: bold;
+}
+
+.card-projects .card__date {
+  color: #6e6b80;
+  font-size: 1rem; /* Aumentado el tamaño de la fecha */
+}
+
+.card-projects .card__arrow {
+  position: absolute;
+  background: var(--primary-color);
+  padding: 0.4rem;
+  border-top-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+  bottom: 0;
+  right: 0;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-projects svg {
+  transition: 0.2s;
+}
+
+.card-projects:hover .card__title-projects {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.card-projects:hover .card__arrow {
+  background: #111;
+}
+
+.card-projects:hover .card__arrow svg {
+  transform: translateX(3px);
+}
+
+
+/*Pie de pagina*/
+
+footer{
+  height: 60px;
+  width: 100%;
+  background-color: #777;
+}
+
+.container-footer {
+  justify-content: center;
+  display: flex;
+}
+
+.footer-text{
+  padding-top: 20px;
+}
