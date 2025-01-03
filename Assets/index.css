@@ -522,3 +522,168 @@ footer{
 .footer-text{
   padding-top: 20px;
 }
+
+/* Estilos comunes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+}
+
+/* Header */
+#Header {
+  background-color: rgb(218, 66, 66);
+  font-family: 'Times New Roman', serif;
+  height: 85px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Main Section */
+main {
+  background-color: rgb(49, 43, 43);
+}
+
+/* Media Queries para hacerlo responsivo */
+
+/* Dispositivos con pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .title {
+      font-size: 40px;
+  }
+
+  .Presentation {
+      flex-direction: column;
+      padding: 20px;
+      height: auto;
+  }
+
+  .box-presentation {
+      width: 100%;
+      text-align: center;
+  }
+
+  .box-profile {
+      width: 80%;
+      height: 200px;
+      margin: 20px 0;
+  }
+
+  /* Skills */
+  #container-Skills {
+      grid-template-columns: 1fr; /* Una sola columna */
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .card {
+      width: 90%; /* Las cartas ocupan más espacio */
+      height: auto;
+  }
+
+  /* Projects */
+  #container-Projects {
+      flex-direction: column;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .card-projects {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1.2rem;
+  }
+
+  /* Social and Form */
+  #Social-medias {
+      height: auto;
+  }
+
+  .container-social {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .form-container {
+      width: 90%;
+  }
+}
+
+/* Dispositivos medianos (tabletas) */
+@media (max-width: 1024px) {
+  .title {
+      font-size: 50px;
+  }
+
+  .Presentation {
+      flex-direction: column;
+      padding: 30px;
+  }
+
+  .box-presentation {
+      width: 80%;
+  }
+
+  .card {
+      width: 80%; /* Ajustamos un poco el tamaño */
+  }
+
+  .card-projects {
+      width: 45%; /* Dos columnas para tabletas */
+  }
+
+  .container-social {
+      flex-direction: row;
+  }
+}
+
+/* Para pantallas grandes (escritorio) */
+@media (min-width: 1025px) {
+  .Presentation {
+      flex-direction: row;
+      padding: 0px 200px;
+      height: 65vh;
+  }
+
+  .box-presentation {
+      width: 50%;
+  }
+
+  #container-Skills {
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+      width: 300px;
+  }
+
+  .card-projects {
+      width: 420px;
+  }
+}
