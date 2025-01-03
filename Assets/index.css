@@ -2,6 +2,7 @@
 
 main{
   font-family: 'Times New Roman', serif;
+  background-color: rgb(53, 50, 50) ;
 }
 
 .title{
@@ -59,7 +60,6 @@ main{
     font-family: 'Times New Roman', serif;
 }
 
-/* Estilo para la sección de la presentación */
 .Presentation {
   display: flex;                /* Usamos flexbox para alinear los elementos en fila */
   justify-content: space-between; /* Espacio entre los elementos */
@@ -68,12 +68,10 @@ main{
   padding: 0px 200px;             /* Margen a la derecha e izquierda */
 }
 
-/* Caja de la descripción */
 .box-presentation {
   width: 50%;                   
 }
 
-/* Títulos */
 #title-part2 {
   font-size: 60px;
   padding-left: 55px;
@@ -92,34 +90,29 @@ main{
   text-align: justify;
 }
 
-/* Estilo para la foto de perfil */
 .box-profile {
-  width: 40%;                  /* 30% para la foto */
+  width: 40%;                  
   display: flex;
-  justify-content: center;      /* Alineamos la imagen al centro */
+  justify-content: center;      
   align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.card {
-  width: 220;
-  height: 300;
-  border-radius: 20px;
-  padding: 5px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-}
-
-.card__content {
-  background: rgb(5, 6, 45);
-  border-radius: 17px;
+.card-content-profile {
+  border-radius: 13px;
   width: 100%;
   height: 100%;
 }
 
-.card img {
-  width: 100%;                 /* Aseguramos que la imagen ocupe todo el espacio de la tarjeta */
+.card-profile img {
+  width: 100%;                 
   height: 100%;
-  border-radius: 17px;         /* Bordes redondeados para la imagen */
-  object-fit: cover;           /* Asegura que la imagen se ajuste bien dentro del contenedor */
+  border-radius: 13px;        
+  object-fit: cover;           
 }
 
 /* Skills section */ 
@@ -127,7 +120,7 @@ main{
 #Skills {
   text-align: center;
   width: 100%;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -145,7 +138,7 @@ main{
   width: 100%;
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 250px;
   display: grid; 
   grid-template-columns: repeat(3, 1fr); /* Tres columnas en la primera y segunda fila */
@@ -220,8 +213,8 @@ main{
 #Projects {
   text-align: justify;
   width: 100%;
-  padding-top: 100px;
-  width:100%;
+  padding-top: 30px;
+  height:100%;
 }
 
 #Projects h1 {
@@ -237,8 +230,8 @@ main{
   width: 100%;
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 0px;
-  padding-bottom: 250px;
+  padding-top: 50px;
+  padding-bottom: 150px;
   display: flex; /* Cambiado de grid a flex */
   justify-content: space-between; /* Distribuir las cartas */
   gap: 20px; /* Espacio entre las cartas */
@@ -308,6 +301,208 @@ main{
 
 .card-projects:hover .card__arrow svg {
   transform: translateX(3px);
+}
+
+
+/* Social and Form*/ 
+
+#Social-medias {
+  display: flex;
+  flex-direction: column;   /* Asegura que los elementos (h2, formulario y redes) estén en columna */
+  justify-content: center;  /* Centra el contenido verticalmente */
+  align-items: center;      /* Centra el contenido horizontalmente */
+  width: 100%;
+  height: 100vh;            /* Asegura que la altura sea del 100% de la pantalla */
+  padding-top: 30px;
+  padding-bottom: 100px;
+  box-sizing: border-box;   /* Asegura que el padding no afecte el tamaño total */
+}
+
+#h2-Social {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  text-align: center;       /* Centra el texto dentro del h2 */
+  padding-right: 95px;
+  margin: 0;                /* Elimina márgenes innecesarios */
+  width: 100%;              /* Asegura que el h2 ocupe el ancho completo */
+  padding-bottom: 20px;
+}
+
+.container-social {
+  display: flex;
+  justify-content: center;  /* Centra el contenido de forma horizontal */
+  align-items: center;      /* Centra el contenido de forma vertical */
+  gap: 30px;                /* Espacio entre los dos elementos (formulario y tarjetas sociales) */
+  flex-wrap: wrap;          /* Permite que los elementos se acomoden en varias líneas si es necesario */
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+
+.form-container, .card-social {
+  display: flex;
+  flex-direction: column;   /* Asegura que el formulario y las tarjetas se alineen verticalmente */
+  justify-content: center;  /* Centra el contenido verticalmente */
+  align-items: center;      /* Centra el contenido horizontalmente */
+}
+
+.form-container button:active {
+  scale: 0.95;
+  justify-content: center;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #717171;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: center;      /* Centra el contenido verticalmente */
+  justify-content: center;  /* Centra el contenido horizontalmente */
+  align-self: center;       /* Asegura que el botón se alinee al centro del contenedor */
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+.card-social{
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 
